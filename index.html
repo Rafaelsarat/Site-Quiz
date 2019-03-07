@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <h1> Bem-Vindo</h1>
+  <label>e-mail</label>
+  <input type="text"name="
+  e-mail">
+  <label>senha</label>
+  <input type="passoword" name="senha">
+ <button>Entrar</button>
+ <script type="text/javascript">
+ 	alert ("Bem-Vindo")
+ </script>
+</head>
+<body>
+  <div id="app">
+    <h1 v-if="logado">{{usario}}</h1>
+    <input v-model="message" v-else>
+    {{message}}
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    var app = new Vue({
+    el: '#app',
+    data: {
+    message: 'Faça o login' , 
+    logado: true ,
+    usario: "Seila"
+  }
+  }) 
+ </script>
+</body>
+</html>
