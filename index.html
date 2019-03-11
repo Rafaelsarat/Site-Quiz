@@ -19,7 +19,7 @@
       el: "#login",
       data: {
         alert: {
-          message: "hello world"
+          message: "Faça login"
         },
         login: {
           login: "",
@@ -28,7 +28,7 @@
         shake: false,
         good: "",
         fake: {
-          login: "vincent",
+          login: "sarat",
           password: "admin"
         }
       },
@@ -50,10 +50,10 @@
             this.fake.login == this.login.login &&
             this.fake.password == this.login.password
           ) {
-            this.alert.message = "Hello Huston !";
+            this.alert.message = "Voce está logado !";
           } else {
             this.shake = true;
-            this.alert.message = "Huston, we got a problem !";
+            this.alert.message = "Você errou sua senha ou seu email tente novamente !";
           }
           },3000)
           console.log(this.shake)
@@ -62,5 +62,6 @@
       }
     });
   </script>
+  </div>
 </body>
 </html>
