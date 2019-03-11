@@ -4,32 +4,19 @@
   <meta charset="utf-8">
   <title>Quiz</title>
   <h1> Bem-Vindo</h1>
-  <label>e-mail</label>
-  <input type="text"name="
-  e-mail">
-  <label>senha</label>
-  <input type="passoword" name="senha">
- <button>Entrar</button>
- <script type="text/javascript">
- 	alert ("Bem-Vindo")
  </script>
 </head>
 <body>
-  <div id="app">
-    <h1 v-if="logado">{{usario}}</h1>
-    <input v-model="message" v-else>
-    {{message}}
-    </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script>
-    var app = new Vue({
-    el: '#app',
-    data: {
-    message: 'Faça o login' , 
-    logado: true ,
-    usario: "Seila"
-  }
-  }) 
- </script>
+        <h2>Login</h2> 
+        <input type="text" value="Username" id="text" /><br> 
+        <input type="password" value="" /><br> 
+        <input type="button" value="Login" onclick="logar()" />
+        </tr></td></table> 
+        <script> 
+        function logar(){ 
+        var user=prompt('Qual e mesmo o seu nome?','') 
+        document.write("Ola "+user+" seja bem vindo ao site de Quiz") 
+        } 
+        </script>
 </body>
 </html>
