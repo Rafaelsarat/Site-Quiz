@@ -2,21 +2,65 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Quiz</title>
-  <h1> Bem-Vindo</h1>
-  <h2>Login</h2> 
-  <input type="text" value="Username" id="text" /><br> 
-  <input type="password" value="" /><br> 
-  <input type="button" value="Login" onclick="logar()" />
-  </tr></td></table> 
-  <script> 
-  function logar(){ 
-  var user=prompt('Qual e mesmo o seu nome?','') 
-  document.write("Ola "+user+" seja bem vindo ao site de Quiz") 
-  } 
-  </script>
- </script>
+  <section id="login" v-bind:class="isShake">
+      <form>
+       <h2>Login</h2>
+       <div class="info" v-bind:class="good">   
+       </div>
+       <input type="text" v-model="login.login" placeholder="Username" />
+       <input type="password" v-model="login.password" placeholder="Password" />
+       <button v-on:click="onSubmit">Log in</button>
+      </form>
+     </section>
 </head>
 <body>
+  <script>
+    var vue = new Vue({
+      el: "#login",
+      data: {
+        alert: {
+          message: "hello world"
+        },
+        login: {
+          login: "",
+          password: ""
+        },
+        shake: false,
+        good: "",
+        fake: {
+          login: "vincent",
+          password: "admin"
+        }
+      },
+      computed: {
+        isShake: function(){
+          console.log(this.shake);
+          if(this.shake == true){
+            return 'shake'
+          }
+          return 'none'
+        }
+      },
+      methods: {
+        onSubmit: function(event) {
+          event.preventDefault();
+          this.shake = false
+          setTimeout(function(){
+            if (
+            this.fake.login == this.login.login &&
+            this.fake.password == this.login.password
+          ) {
+            this.alert.message = "Hello Huston !";
+          } else {
+            this.shake = true;
+            this.alert.message = "Huston, we got a problem !";
+          }
+          },3000)
+          console.log(this.shake)
+          
+        }
+      }
+    });
+  </script>
 </body>
 </html>
