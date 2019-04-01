@@ -1,5 +1,9 @@
 <template>
-    <div>
-        <h1>             Estou na pagina de clientes </h1>
-    </div>   
+  <v-carousel hide-delimiters>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
 </template>
