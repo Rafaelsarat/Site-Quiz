@@ -41,20 +41,34 @@
                 <v-flex xs12 sm6>
                   <v-autocomplete
                     :items="['Matemática', 'História', 'Português', 'Geografia', 'Fisica', 'Esportes', 'Entreterimento', 'Video games', 'Famosos']"
-                    label="Interests"
+                    label="Sua matéria favorita"
                     multiple
                   ></v-autocomplete>
                 </v-flex>
               </v-layout>
             </v-container>
-            <small>*indicates required field</small>
+            <small></small>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="blue darken-1" flat @click="dialog = false">Close</v-btn>
-            <v-btn color="blue darken-1" flat @click="dialog = false">Save</v-btn>
+            <v-btn color="blue darken-1" flat @click="digatchau = false">Cancelar</v-btn>
+            <v-btn color="blue darken-1" flat @click="digaOla">Cadastrar</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
     </v-layout>
   </template>
+  <script>
+  export default {
+    methods:{
+      digaOla(){
+        alert("Seu cadastro foi realizado com sucesso");
+        }
+        digatchau(){
+          alert("fff")
+        }
+      
+    }
+  }
+  </script>
+  
