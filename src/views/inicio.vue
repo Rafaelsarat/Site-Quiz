@@ -1,14 +1,26 @@
 <template>
-    <div class="text-xs-center">
-    <v-menu offset-y>
-      <template v-slot:activator="{ on }">
-        <v-btn
-          color="primary"
-          dark
+
+  <div class="text-xs-center">
+     <v-toolbar>
+    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-title>Title</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn flat>Link One</v-btn>
+      <v-btn flat>Link Two</v-btn>
+      <v-btn flat>Link Three</v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
+  <v-menu bottom
+      origin="center center"
+      transition="scale-transition"
+    >
+      <template v-slot:activator="{ on }" >
+         <v-btn outline fab color="teal"
           v-on="on"
           class="rafa"
         >
-          Menu
+         <v-icon>list</v-icon>
         </v-btn>
       </template>
       <v-list>
@@ -21,40 +33,8 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-  <div>
-  <v-carousel hide-delimiters>
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-    ></v-carousel-item>
-  </v-carousel>
-  </div>
   </div>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        items: [
-          {
-            src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWQm1yEbpGEG6YOWehV51naNaFZpxM1nLdcrXy_XQIVEYAtdr'
-          },
-          {
-            src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQshtrMF4pZivmrPAdivUnuMEFcsuJ3lY6znRwJ2irScKFwSf5o'
-          },
-          {
-            src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYG_UHG0M_AnmazzLTfo3Zt5FTMz1462LTX80nCRjv8YAhGNmKzw'
-          },
-          {
-            src: 'http://noticias.universia.com.br/net/images/cultura/9/9-/9-t/9-testes-para-avaliar-sua-capacidade-mental.jpg'
-          }
-        ]
-      }
-    }
-  }
-</script>
 
 <script>
   export default {
