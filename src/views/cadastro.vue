@@ -63,7 +63,7 @@
     methods:{
       digaOla(){
         alert("Seu cadastro foi realizado com sucesso");
-        }
+        },
         digatchau(){
           alert("fff")
         }

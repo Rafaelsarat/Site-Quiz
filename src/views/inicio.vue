@@ -1,8 +1,25 @@
 <template>
 
+
   <div class="text-xs-center">
      <v-toolbar>
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-menu bottom
+        origin="center center"
+        transition="scale-transition"
+      >
+      <template v-slot:activator="{ on }" >
+        <v-toolbar-side-icon v-on="on" color="teal" outline></v-toolbar-side-icon>
+      </template>
+      <v-list>
+        <v-list-tile
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+    
     <v-toolbar-title>Title</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
@@ -11,29 +28,9 @@
       <v-btn flat>Link Three</v-btn>
     </v-toolbar-items>
   </v-toolbar>
-  <v-menu bottom
-      origin="center center"
-      transition="scale-transition"
-    >
-      <template v-slot:activator="{ on }" >
-         <v-btn outline fab color="teal"
-          v-on="on"
-          class="rafa"
-        >
-         <v-icon>list</v-icon>
-        </v-btn>
-      </template>
-      <v-list>
-        <v-list-tile
-          v-for="(item, index) in items"
-          :key="index"
-          @click=""
-        >
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
+  
   </div>
+  
 </template>
 
 <script>
