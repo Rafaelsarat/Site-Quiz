@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import Cadastro from './views/Cadastro.vue'
 import Cliente from './views/Cliente.vue'
-import Inicio from './views/Inicio.vue'  
+import Inicio from './views/Inicio.vue' 
+import DemoVariaveis from './views/DemoVariaveis.vue'
 
 Vue.use(Router)
 
@@ -31,7 +32,13 @@ export default new Router({
       name: 'inicio',
       component: Inicio
     },
+    {
+      path: '/Variaveis',
+      name: 'Variaveis',
+      component: DemoVariaveis
+    },
   ]
 })
+
 
 
