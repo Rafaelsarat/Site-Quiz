@@ -59,6 +59,7 @@
     </v-layout>
   </template>
   <script>
+  import LoginService from '../service/LoginService.js'
   export default {
     methods:{
       digaOla(){
@@ -66,9 +67,16 @@
         },
         digatchau(){
           alert("fff")
+        },
+        realizarLogin(){
+            let retorno = LoginService.logar(this.email, this.senha)
+            if(retorno == true){
+              this
+            }
+        }
+
         }
       
     }
-  }
   </script>
   
