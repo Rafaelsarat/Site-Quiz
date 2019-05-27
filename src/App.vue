@@ -50,6 +50,7 @@
         { title: 'Meu Desempenho', icone:"assessment" , rota:"/desempenho"},
         { title: 'Minhas Questões', icone:"playlist_add_check" , rota:"/questoes"},
         { title: 'Meu Perfil', icone:"person", rota:"/perfil"},
+        { title: 'Lista', icone:"person", rota:"/lista"},
       ]
     })
   }
