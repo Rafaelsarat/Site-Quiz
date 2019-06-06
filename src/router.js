@@ -7,6 +7,7 @@ import Inicio from './views/Inicio.vue'
 import Lista from './views/Lista.vue'
 import Rank from './views/Rank.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
+import Produtos from './views/produtos.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/Variaveis',
       name: 'Variaveis',
       component: DemoVariaveis
+    },
+    {
+      path: '/Produtos',
+      name: 'Produtos',
+      component: produtos
     },
   ]
 })
