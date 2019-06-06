@@ -47,11 +47,11 @@
     data: () => ({
       items: [
         { title: 'Ranking', icone:"search", rota:"/rank"},
-        { title: 'Meu Desempenho', icone:"assessment" , rota:"/desempenho"},
         { title: 'Minhas Questões', icone:"playlist_add_check" , rota:"/questoes"},
         { title: 'Meu Perfil', icone:"person", rota:"/perfil"},
         { title: 'Lista', icone:"person", rota:"/lista"},
-        { title: 'Outros', icone:"person", rota:"/Outros"},
+        { title: 'Outros', icone:"list", rota:"/Outros  "},
+        { title: 'Meu Desempenho', icone:"assessment" , rota:"/desempenho"},
       ]
     })
   }

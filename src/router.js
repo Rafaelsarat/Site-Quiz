@@ -8,6 +8,7 @@ import Lista from './views/Lista.vue'
 import Rank from './views/Rank.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
 import Outros from './views/Outros.vue'
+import Desempenho from './views/Desempenho.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/Desempenho',
+      name: 'desempenho',
+      component: Desempenho
     },
     {
       path: '/cadastro',
