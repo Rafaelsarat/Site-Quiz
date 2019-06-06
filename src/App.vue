@@ -51,6 +51,7 @@
         { title: 'Minhas Questões', icone:"playlist_add_check" , rota:"/questoes"},
         { title: 'Meu Perfil', icone:"person", rota:"/perfil"},
         { title: 'Lista', icone:"person", rota:"/lista"},
+        { title: 'Outros', icone:"person", rota:"/Outros"},
       ]
     })
   }
