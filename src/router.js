@@ -1,18 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login.vue'
-import Cadastro from './views/Cadastro.vue'
+import Cadastro from './views/cadastro.vue'
 import Cliente from './views/Cliente.vue'
-import Inicio from './views/Inicio.vue'
+import Inicio from './views/inicio.vue'
 import Lista from './views/Lista.vue'
 import Rank from './views/Rank.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
-<<<<<<< HEAD
 import Produtos from './views/produtos.vue'
-=======
 import Outros from './views/Outros.vue'
 import Desempenho from './views/Desempenho.vue'
->>>>>>> deaa73e9e6652480973ae23d6a22917ff1360da1
 
 Vue.use(Router)
 
@@ -61,15 +58,14 @@ export default new Router({
       component: DemoVariaveis
     },
     {
-<<<<<<< HEAD
       path: '/Produtos',
       name: 'Produtos',
       component: produtos
-=======
+    },
+    {
       path: '/Outros',
       name: 'outros',
       component: Outros
->>>>>>> deaa73e9e6652480973ae23d6a22917ff1360da1
     },
   ]
 })
