@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login.vue'
-import Cadastro from './views/Cadastro.vue'
+import Cadastro from './views/cadastro.vue'
 import Cliente from './views/Cliente.vue'
 import Inicio from './views/Inicio.vue'
 import Lista from './views/Lista.vue'
 import Rank from './views/Rank.vue'
 import DemoVariaveis from './views/DemoVariaveis.vue'
+import Produtos from './views/produtos.vue'
 import Outros from './views/Outros.vue'
 import Desempenho from './views/Desempenho.vue'
 
@@ -55,6 +56,11 @@ export default new Router({
       path: '/Variaveis',
       name: 'Variaveis',
       component: DemoVariaveis
+    },
+    {
+      path: '/Produtos',
+      name: 'Produtos',
+      component: produtos
     },
     {
       path: '/Outros',
