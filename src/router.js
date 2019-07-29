@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login.vue'
-import Cadastro from './views/cadastro.vue'
+import Cadastro from './views/Cadastro.vue'
 import Cliente from './views/Cliente.vue'
 import Inicio from './views/Inicio.vue'
 import Lista from './views/Lista.vue'
@@ -60,7 +60,7 @@ export default new Router({
     {
       path: '/Produtos',
       name: 'Produtos',
-      component: produtos
+      component: Produtos
     },
     {
       path: '/Outros',
