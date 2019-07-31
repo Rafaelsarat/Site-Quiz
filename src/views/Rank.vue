@@ -22,7 +22,7 @@
               v-else
               :key="item.title"
               avatar
-              @click=""
+              @ click=""
             >
               <v-list-tile-avatar>
                 <img :src="item.avatar">

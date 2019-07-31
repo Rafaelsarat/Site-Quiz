@@ -25,7 +25,7 @@
             <v-list-tile
               v-for="subItem in item.items"
               :key="subItem.title"
-              @click=""
+              @ click=""
             >
               <v-list-tile-content>
                 <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
