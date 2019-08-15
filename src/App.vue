@@ -52,12 +52,13 @@
         { title: 'Lista', icone:"person", rota:"/lista"},
         { title: 'Outros', icone:"list", rota:"/Outros  "},
         { title: 'Meu Desempenho', icone:"assessment" , rota:"/desempenho"},
+        { title: 'Agua', icone:"assessment" , rota:"/Agua"},
       ]
     })
   }
 </script>
 <style>
-  .rafa{
+  .rafa{  
     margin-top:33px;  
 }
 
