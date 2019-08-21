@@ -10,7 +10,7 @@ import DemoVariaveis from './views/DemoVariaveis.vue'
 import Produtos from './views/produtos.vue'
 import Outros from './views/Outros.vue'
 import Desempenho from './views/Desempenho.vue'
-import Agua from './views/agua.vue'
+import Agua from './views/Agua.vue'
 
 Vue.use(Router)
 
